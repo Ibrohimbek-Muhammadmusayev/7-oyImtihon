@@ -54,7 +54,7 @@ export function Login() {
                         <NavLink to={'/'}><button type="submit" className="btn w-[320px] btn-primary">GUEST USER</button></NavLink>
                         <div className="flex gap-[8px] items-center m-auto">
                             <p>Not a member yet? </p>
-                            <NavLink className="text-lg text-center text-primary" href="/register">register</NavLink>
+                            <NavLink className="text-lg text-center text-primary" to="/register">register</NavLink>
                         </div>
                     </div>
                 </form>

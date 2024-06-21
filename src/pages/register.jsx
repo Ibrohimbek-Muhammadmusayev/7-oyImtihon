@@ -76,7 +76,7 @@ export function Register() {
                             <button type="submit" className="btn mt-[24px] text-[#ffff] btn-info">REGISTER</button>
                             <div className="flex gap-[8px] items-center m-auto">
                                 <p>Not a member yet? </p>
-                                <NavLink className="text-lg text-center text-primary" href="/login">login</NavLink>
+                                <NavLink className="text-lg text-center text-primary" to="/login">login</NavLink>
                             </div>
                         </form>
                     <div/>
