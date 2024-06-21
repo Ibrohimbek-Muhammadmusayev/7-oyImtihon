@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
     
 export function Register() {
@@ -41,12 +41,6 @@ export function Register() {
             Navigation('/')
         }
     }
-
-    // const hendlSubmit = (e)=> {
-    //     e.preventDefault()
-    //     // localStorage.setItem('user', 'true')
-    //     // Navigation('/')
-    // }
 
     return (
         <div>
