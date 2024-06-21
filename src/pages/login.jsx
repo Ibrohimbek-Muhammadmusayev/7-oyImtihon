@@ -21,7 +21,7 @@ export function Login() {
             console.log('login', user);
             setLogin(user)
             Navigation('/')
-            localStorage.setItem('user', 'false')
+            localStorage.setItem('user', 'true')
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -54,7 +54,7 @@ export function Login() {
                         <NavLink to={'/'}><button type="submit" className="btn w-[320px] btn-primary">GUEST USER</button></NavLink>
                         <div className="flex gap-[8px] items-center m-auto">
                             <p>Not a member yet? </p>
-                            <a className="text-lg text-center text-primary" href="/register">register</a>
+                            <NavLink className="text-lg text-center text-primary" href="/register">register</NavLink>
                         </div>
                     </div>
                 </form>
